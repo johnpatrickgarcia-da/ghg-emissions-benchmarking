@@ -1,0 +1,13 @@
+company_id,metric,fiscal_year,value_reported,unit_reported,source_document,source_page,notes
+TYT,Revenue,2023,37154.2,1000000000,Toyota Integrated Report 2025,163,
+TYT,Revenue,2024,45095.3,1000000000,Toyota Integrated Report 2025,163,
+TYT,Revenue,2025,48036.7,1000000000,Toyota Integrated Report 2025,163,
+TYT,JPY to USD Exchange Rate,2023,135.0,1,Toyota Integrated Report 2025,163,
+TYT,JPY to USD Exchange Rate,2024,145.0,1,Toyota Integrated Report 2025,163,
+TYT,JPY to USD Exchange Rate,2025,153.0,1,Toyota Integrated Report 2025,163,
+TYT,Headcount,2023,375235.0,1,Toyota Sustainability Data Book 2023,5,
+TYT,Headcount,2024,380793.0,1,Toyota Sustainability Data Book 2024,5,
+TYT,Headcount,2025,383853.0,1,Toyota Sustainability Data Book 2025,5,
+TYT,Vehicles sold,2023,8821872.0,1,Toyota Sustainability Data Book 2023,5,
+TYT,Vehicles sold,2024,9442770.0,1,Toyota Sustainability Data Book 2024,5,
+TYT,Vehicles sold,2025,9362410.0,1,Toyota Sustainability Data Book 2025,5,

@@ -1,0 +1,7 @@
+unit_reported,unit_standard,conversion_factor,notes
+million t-CO₂e,million t-CO₂e,1.0,Toyota standard unit — no conversion needed
+thousand t-CO₂,million t-CO₂e,0.001,Subaru reports Scope 1+2 in thousand t — divide by 1000
+thousand t-CO₂e,million t-CO₂e,0.001,Variant spelling — same conversion as above
+t-CO₂e,million t-CO₂e,1e-06,"Tonne level — divide by 1,000,000 (unlikely but included for completeness)"
+million t-CO₂,million t-CO₂e,1.0,CO₂ only vs CO₂e — flag in notes if GWP correction needed
+kt-CO₂e,million t-CO₂e,0.001,Kilotonnes — divide by 1000
