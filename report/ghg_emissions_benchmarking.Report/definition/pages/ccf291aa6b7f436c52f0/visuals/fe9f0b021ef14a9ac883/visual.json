@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "fe9f0b021ef14a9ac883",
+  "position": {
+    "x": 77.222222222222229,
+    "y": 188.88888888888889,
+    "z": 1000,
+    "height": 838.51851851851848,
+    "width": 1768.3333333333335,
+    "tabOrder": 1000
+  },
+  "visualGroup": {
+    "displayName": "Operational Emissions",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

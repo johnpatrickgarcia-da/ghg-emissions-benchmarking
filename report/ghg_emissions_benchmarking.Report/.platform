@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "ghg_emissions_benchmarking"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7701832f-3f66-4f96-8bc1-4fa231f59746"
+  }
+}

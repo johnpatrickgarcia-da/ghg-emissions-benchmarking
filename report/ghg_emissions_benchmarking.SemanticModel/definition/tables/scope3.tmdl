@@ -1,0 +1,327 @@
+table scope3
+	lineageTag: 158b58eb-9d14-43ac-a321-265c770ebdf7
+
+	measure 'Scope 3 Tree Title' =
+			
+			"Share of Reported Scope 3 by Category, "
+			    & SELECTEDVALUE ( fiscal_year[fiscal_year], "all years" )
+		isHidden
+		lineageTag: 3855e502-eaf1-4b33-be04-ff28f750ab54
+
+		changedProperty = IsHidden
+
+	measure 'S12 (Mt)' = CALCULATE(SUM(emissions[value_mt]),emissions[scope]IN{"Scope 1","Scope 2 (market-based)"})
+		formatString: " #,0.00"" million t"""
+		isHidden
+		lineageTag: 075dc503-4115-44a8-83a2-a8c1cd2e7c61
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Cat 11 (Mt)' = CALCULATE(SUM(scope3[value_mt]),scope3[category_no]=11)
+		formatString: " #,0.00"" million t"""
+		isHidden
+		lineageTag: 64481b80-6cba-4a10-b91a-1953115af318
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Other Scope 3 (Mt)' = SUM(scope3[value_mt])-scope3[Cat 11 (Mt)]
+		formatString: " #,0.00"" million t"""
+		isHidden
+		lineageTag: 3547f293-3b0b-4713-9ad8-8fcfad905d16
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Scope 1+2 vs 3 Stacked Title' =
+			
+			"Scope 1+2 vs Scope 3, "
+			    & SELECTEDVALUE ( fiscal_year[fiscal_year], "all years" )
+			    & " (share of reported total)"
+		isHidden
+		lineageTag: d8a1112c-4b6e-4846-879c-e4f9aaa3d47f
+
+		changedProperty = IsHidden
+
+	measure 'Scope 3 Share' =
+			
+			DIVIDE(
+			    SUM(scope3[value_mt]),
+			    CALCULATE(
+			        SUM(scope3[value_mt]),
+			        REMOVEFILTERS(scope3[Stream], scope3[Category], scope3[category_no], scope3[category_name])
+			    )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		isHidden
+		lineageTag: 6b11e8be-d6dd-44c8-a6e6-3aa63ab71afe
+
+		changedProperty = IsHidden
+
+	measure 'Cat 11 Share Text' =
+			
+			VAR _shares =
+			    ADDCOLUMNS(
+			        ALL(fundamentals[company_name]),
+			        "@c11", DIVIDE([Cat 11 (Mt)], CALCULATE(SUM(scope3[value_mt]))),
+			        "@c1",  DIVIDE(
+			                    CALCULATE(SUM(scope3[value_mt]), scope3[category_no] = 1),
+			                    CALCULATE(SUM(scope3[value_mt]))
+			                )
+			    )
+			VAR _valid = FILTER(_shares, NOT ISBLANK([@c11]))
+			VAR _avg11 = AVERAGEX(_valid, [@c11])
+			VAR _min11 = MINX(_valid, [@c11])
+			VAR _max11 = MAXX(_valid, [@c11])
+			VAR _avg1  = AVERAGEX(_valid, [@c1])
+			VAR _min1  = MINX(_valid, [@c1])
+			VAR _max1  = MAXX(_valid, [@c1])
+			VAR _n = COUNTROWS(_valid)
+			RETURN
+			    "Category 11 (use of sold products) averages " & FORMAT(_avg11, "0%")
+			        & " of reported Scope 3 across " & IF(_n = 4, "the four companies", _n & " companies")
+			        & " (range " & FORMAT(_min11, "0%") & "–" & FORMAT(_max11, "0%") & ") in "
+			        & SELECTEDVALUE(fiscal_year[fiscal_year]) & ". "
+			        & "Category 1 (purchased goods and services) is second, averaging "
+			        & FORMAT(_avg1, "0%")
+			        & " (range " & FORMAT(_min1, "0%") & "–" & FORMAT(_max1, "0%") & ")."
+		isHidden
+		lineageTag: 6ece985e-7ea1-4b48-88fa-ebe3d178e95b
+
+		changedProperty = IsHidden
+
+	measure 'S12 Share Text' =
+			
+			VAR _shares =
+			    ADDCOLUMNS(
+			        ALL(fundamentals[company_name]),
+			        "@share",
+			            DIVIDE([S12 (Mt)], [S12 (Mt)] + CALCULATE(SUM(scope3[value_mt])))
+			    )
+			VAR _valid = FILTER(_shares, NOT ISBLANK([@share]))
+			RETURN
+			    "Operational (Scope 1+2) emissions are only "
+			        & FORMAT(MINX(_valid, [@share]), "0.0%") & "–" & FORMAT(MAXX(_valid, [@share]), "0.0%")
+			        & " of each company's reported footprint in " & SELECTEDVALUE(fiscal_year[fiscal_year])
+			        & "; most comes from customers' use of sold vehicles (Category 11)."
+		isHidden
+		lineageTag: da7601b7-1d2b-4838-95f6-ef2746139a8b
+
+		changedProperty = IsHidden
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: bb8e074a-5cae-4626-8276-154f24b5c0b4
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: 9e86eba2-808b-4f34-9a64-fbce295aacb7
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column category_no
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 18415104-8d01-435d-8375-9720d0ba23b9
+		summarizeBy: none
+		sourceColumn: category_no
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column category_name
+		dataType: string
+		isHidden
+		lineageTag: 46592fe1-d1de-4da0-989b-6c99cc37a3a9
+		summarizeBy: none
+		sourceColumn: category_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column disclosed
+		dataType: string
+		isHidden
+		lineageTag: 53c730cb-0850-440a-84f9-01fad77db1fb
+		summarizeBy: none
+		sourceColumn: disclosed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column value_reported
+		dataType: double
+		isHidden
+		lineageTag: 8458376f-ff47-4311-82b2-852c8a4b0938
+		summarizeBy: none
+		sourceColumn: value_reported
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_reported
+		dataType: string
+		isHidden
+		lineageTag: 722965f6-df8f-4c44-8c9e-f50548f86a3c
+		summarizeBy: none
+		sourceColumn: unit_reported
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column value_mt
+		dataType: double
+		isHidden
+		lineageTag: 9a945fb5-91b5-4694-b657-9e157ffc9a98
+		summarizeBy: sum
+		sourceColumn: value_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gas_basis
+		dataType: string
+		isHidden
+		lineageTag: b6440a90-0f11-404f-a57b-8e6af08707e6
+		summarizeBy: none
+		sourceColumn: gas_basis
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column boundary_method
+		dataType: string
+		isHidden
+		lineageTag: 6257e6cf-654d-4f2d-8c62-a39ed9dbf70f
+		summarizeBy: none
+		sourceColumn: boundary_method
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assurance_status
+		dataType: string
+		isHidden
+		lineageTag: cd8266a9-95ab-471b-8867-87d7b099564e
+		summarizeBy: none
+		sourceColumn: assurance_status
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_document
+		dataType: string
+		isHidden
+		lineageTag: 56beafcc-ed30-4159-98ba-f7e159f568eb
+		summarizeBy: none
+		sourceColumn: source_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_page
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 3f4da101-69d3-49ae-9ff5-d6c6cb7edbd5
+		summarizeBy: none
+		sourceColumn: source_page
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column methodology_notes
+		dataType: string
+		isHidden
+		lineageTag: a6e524b7-4efe-4461-bb4e-62cb7a5cfaa4
+		summarizeBy: none
+		sourceColumn: methodology_notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assurance_notes
+		dataType: string
+		isHidden
+		lineageTag: 4a5eac01-d042-4b02-8233-f80cb26ecb47
+		summarizeBy: none
+		sourceColumn: assurance_notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stream = IF ( scope3[category_no] <= 8, "Upstream", "Downstream" )
+		lineageTag: 40237f7e-8ea0-437d-b93f-6ce76b77ece9
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category =
+			
+			scope3[category_no] & ". " & scope3[category_name]
+		lineageTag: 28c2a818-d13e-407a-92b0-8e5081c25ba8
+		summarizeBy: none
+		sortByColumn: category_no
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition scope3 = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost", "ghg_emissions_benchmarking"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "v_scope3"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

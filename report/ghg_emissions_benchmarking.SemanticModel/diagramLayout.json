@@ -1,0 +1,152 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 205.76788956761956
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 90.896060755789449,
+            "y": 969.71243222790815
+          },
+          "nodeIndex": "fiscal_year",
+          "nodeLineageTag": "1ad1240c-1206-482e-9f38-14cceace950c",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 92.728608564324247,
+            "y": 151.46108677201798
+          },
+          "nodeIndex": "fundamentals",
+          "nodeLineageTag": "564e5a80-0bd6-4175-ae05-4387bfbbbab0",
+          "size": {
+            "height": 291.17517092067169,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 361.60516982977083,
+            "y": 493.12490973543129
+          },
+          "nodeIndex": "emissions",
+          "nodeLineageTag": "68475e5e-bc2f-4ad2-a214-ced9ac56294f",
+          "size": {
+            "height": 451.01260389260824,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1189.1402193665,
+            "y": 297.9038000965233
+          },
+          "nodeIndex": "intensity",
+          "nodeLineageTag": "5a523237-e68b-4b64-b0d0-1741a3d728a1",
+          "size": {
+            "height": 450.95695980978383,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 640.09971206188209,
+            "y": 299.43815845306472
+          },
+          "nodeIndex": "scope3",
+          "nodeLineageTag": "158b58eb-9d14-43ac-a321-265c770ebdf7",
+          "size": {
+            "height": 723.84678523365176,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1716.7426065426248,
+            "y": 297.988317147792
+          },
+          "nodeIndex": "scope3_summary",
+          "nodeLineageTag": "b27a8c2e-9b47-4c96-9ee4-47febd25e2a3",
+          "size": {
+            "height": 287.10688198157266,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1451.7708489203646,
+            "y": 298.17163474270239
+          },
+          "nodeIndex": "yoy",
+          "nodeLineageTag": "6685de5d-a1c6-4844-b53b-99343c30a6c4",
+          "size": {
+            "height": 306.00382568709517,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 2008.965454567907,
+            "y": 299.18523514262955
+          },
+          "nodeIndex": "_Measures",
+          "nodeLineageTag": "af4257fe-f821-4c59-9a53-fbae61bbbc5e",
+          "size": {
+            "height": 595.61919520704237,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 92.121171999999888,
+            "y": 493.14827576793971
+          },
+          "nodeIndex": "operations",
+          "nodeLineageTag": "959a0132-2507-4061-90fe-be20bc597d5c",
+          "size": {
+            "height": 420.08768728995994,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 915.34263720774879,
+            "y": 299.72407724928809
+          },
+          "nodeIndex": "disclosure",
+          "nodeLineageTag": "cc45c9ee-27bf-4c15-ad2f-a49a98f64aca",
+          "size": {
+            "height": 647.22595599999966,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 72.24969457835391,
+      "pinKeyFieldsToTop": true,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

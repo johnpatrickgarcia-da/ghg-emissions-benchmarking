@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "caa9291e621a73afcc2e",
+  "displayName": "VALUE-CHAIN EMISSIONS",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#EBF6F7'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "f002fa169e05aa05e9fb",
+      "target": "03b58c7d4f7a68758bec",
+      "type": "NoFilter"
+    },
+    {
+      "source": "03b58c7d4f7a68758bec",
+      "target": "f002fa169e05aa05e9fb",
+      "type": "NoFilter"
+    },
+    {
+      "source": "03b58c7d4f7a68758bec",
+      "target": "b09e20d4be95dab9065e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f002fa169e05aa05e9fb",
+      "target": "b09e20d4be95dab9065e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "03b58c7d4f7a68758bec",
+      "target": "c86971c6bc0714872cb5",
+      "type": "NoFilter"
+    },
+    {
+      "source": "f002fa169e05aa05e9fb",
+      "target": "c86971c6bc0714872cb5",
+      "type": "NoFilter"
+    }
+  ]
+}

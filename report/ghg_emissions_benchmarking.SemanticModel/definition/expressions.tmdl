@@ -1,0 +1,25 @@
+expression disc_scope =
+		let
+		  Source = emissions,
+		  #"Choose columns" = Table.SelectColumns(Source, {"company_id", "fiscal_year_end", "scope", "disclosed", "gas_basis", "assurance_status", "source_document", "source_page", "methodology_notes", "assurance_notes"}),
+		  #"Renamed columns" = Table.RenameColumns(#"Choose columns", {{"scope", "row_label"}}),
+		  #"Inserted conditional column" = Table.AddColumn(#"Renamed columns", "sort_order", each if [row_label] = "Scope 1" then 1 else if [row_label] = "Scope 2 (location-based)" then 2 else if [row_label] = "Scope 2 (market-based)" then 3 else if [row_label] = "Scope 3 Total" then 4 else ""),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Inserted conditional column", {{"sort_order", Int64.Type}})
+		in
+		  #"Changed column type"
+	lineageTag: 8ebd2d8c-1efa-43a3-95da-33bec23d011c
+
+	annotation PBI_ResultType = Table
+
+expression disc_cat =
+		let
+		  Source = scope3,
+		  #"Added custom" = Table.AddColumn(Source, "row_label", each "Cat " & Text.From([category_no]) & ". " & [category_name]),
+		  #"Added custom 1" = Table.TransformColumnTypes(Table.AddColumn(#"Added custom", "sort_order", each 4 + [category_no]), {{"sort_order", Int64.Type}}),
+		  #"Choose columns" = Table.SelectColumns(#"Added custom 1", {"company_id", "fiscal_year_end", "category_no", "category_name", "disclosed", "gas_basis", "assurance_status", "source_document", "source_page", "methodology_notes", "assurance_notes", "row_label", "sort_order"})
+		in
+		  #"Choose columns"
+	lineageTag: c9c91217-f143-42c7-a454-6aee610f6bbc
+
+	annotation PBI_ResultType = Table
+

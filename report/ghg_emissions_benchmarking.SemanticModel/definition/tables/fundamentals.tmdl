@@ -1,0 +1,106 @@
+table fundamentals
+	lineageTag: 564e5a80-0bd6-4175-ae05-4387bfbbbab0
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: 5e6eec8d-140b-4651-b71b-3e9e9a1264a5
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_name
+		dataType: string
+		lineageTag: ceeeff23-ffd8-4c25-b40b-d6ef4aaf17c8
+		summarizeBy: none
+		sourceColumn: company_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ticker
+		dataType: string
+		isHidden
+		lineageTag: 840e587d-2b05-427f-a78f-484f6070b702
+		summarizeBy: none
+		sourceColumn: ticker
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		isHidden
+		lineageTag: ca373d9e-13d2-4a91-a566-e3045a0a99ba
+		summarizeBy: none
+		sourceColumn: country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column currency
+		dataType: string
+		isHidden
+		lineageTag: db967106-a5ed-4192-9420-26177877349d
+		summarizeBy: none
+		sourceColumn: currency
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sector
+		dataType: string
+		isHidden
+		lineageTag: a23ab5de-caa7-4a39-99fc-9723d714c729
+		summarizeBy: none
+		sourceColumn: sector
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gics_sub_industry
+		dataType: string
+		isHidden
+		lineageTag: fe64b34b-350d-4d35-80ed-02fbfae6ea09
+		summarizeBy: none
+		sourceColumn: gics_sub_industry
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: e747e796-27cb-4740-8788-a2bb916539dc
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	partition fundamentals = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost", "ghg_emissions_benchmarking"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "fundamentals"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,306 @@
+table disclosure
+	lineageTag: cc45c9ee-27bf-4c15-ad2f-a49a98f64aca
+
+	measure 'Disclosure Cell' =
+			
+			VAR _row       = SELECTEDVALUE ( disclosure[row_label] )
+			VAR _disclosed = SELECTEDVALUE ( disclosure[disclosed] )
+			VAR _assurance = SELECTEDVALUE ( disclosure[assurance_status] )
+			VAR _notes     = SELECTEDVALUE ( disclosure[assurance_notes] )
+			VAR _gas       = SELECTEDVALUE ( disclosure[gas_basis] )
+			VAR _cats      = SELECTEDVALUE ( scope3_summary[categories_disclosed] )
+			VAR _origAssured =
+			    _assurance = "No Assurance"
+			        && ( LEFT ( _notes, 8 ) = "Verified"
+			             || LEFT ( _notes, 23 ) = "Original value verified" )
+			VAR _assShort =
+			    SWITCH (
+			        TRUE (),
+			        _origAssured, "Limited (original report)",
+			        _assurance = "Limited Assurance",    "Limited",
+			        _assurance = "Reasonable Assurance", "Reasonable",
+			        _assurance = "No Assurance",         "No Assurance",
+			        _assurance
+			    )
+			VAR _base = _assShort & UNICHAR ( 10 ) & _gas
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _disclosed ),  BLANK (),
+			        _disclosed = "No",       "Not disclosed",
+			        _row = "Scope 3 Total",  _base & UNICHAR ( 10 ) & _cats & "/15 categories reported",
+			        _base
+			    )
+		isHidden
+		lineageTag: d4be3648-bb09-4531-b6e7-0562e4b56b90
+
+		changedProperty = IsHidden
+
+	measure 'Disclosure Colour' =
+			
+			VAR _disclosed = SELECTEDVALUE ( disclosure[disclosed] )
+			VAR _assurance = SELECTEDVALUE ( disclosure[assurance_status] )
+			VAR _notes     = SELECTEDVALUE ( disclosure[assurance_notes] )
+			VAR _origAssured =
+			    _assurance = "No Assurance"
+			        && ( LEFT ( _notes, 8 ) = "Verified"
+			             || LEFT ( _notes, 23 ) = "Original value verified" )
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( _disclosed ), BLANK (),
+			        _disclosed = "No",      "#EF9A9A",
+			        _assurance IN { "Limited Assurance", "Reasonable Assurance" }, "#A5D6A7",
+			        _origAssured,           "#DCEDC8",
+			        "#FFE082"
+			    )
+		isHidden
+		lineageTag: 80d27bf2-2cf8-4e50-b2a1-f9834c733965
+
+		changedProperty = IsHidden
+
+	measure 'Heatmap Title' =
+			
+			"Disclosure & Assurance Status by Scope and Category, "
+			    & SELECTEDVALUE ( fiscal_year[fiscal_year] )
+		isHidden
+		lineageTag: a1e94812-81de-4ca3-848a-135ce715e6be
+
+		changedProperty = IsHidden
+
+	measure 'Disclosure Assurance Note' =
+			
+			VAR _n = SELECTEDVALUE ( disclosure[assurance_notes] )
+			RETURN IF ( ISBLANK ( _n ) || _n = "", "—", _n )
+		isHidden
+		lineageTag: e1aac9d7-48bd-43e6-8b62-2ee28c315d83
+
+		changedProperty = IsHidden
+
+	measure 'Disclosure Methodology Note' =
+			
+			VAR _n = SELECTEDVALUE ( disclosure[methodology_notes] )
+			RETURN IF ( ISBLANK ( _n ) || _n = "", "—", _n )
+		isHidden
+		lineageTag: 124ad91f-71d7-4314-8d3d-866d1139ddce
+
+		changedProperty = IsHidden
+
+	measure 'Disclosure Source' =
+			
+			VAR _doc  = SELECTEDVALUE ( disclosure[source_document] )
+			VAR _page = SELECTEDVALUE ( disclosure[source_page] )
+			RETURN
+			    IF ( ISBLANK ( _doc ), "—",
+			         _doc & IF ( ISBLANK ( _page ) || _page = "", "", ", p." & _page ) )
+		isHidden
+		lineageTag: 20dea9cd-950d-4db8-88ef-5dc0c67b4a1b
+
+		changedProperty = IsHidden
+
+	measure 'Tooltip Header' =
+			
+			SELECTEDVALUE ( fundamentals[company_name] ) & " · "
+			    & SELECTEDVALUE ( disclosure[row_label] )
+		isHidden
+		lineageTag: 4137e2d7-5d1d-4037-8a8a-e92b733feb0d
+
+		changedProperty = IsHidden
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: 0e441008-2572-4392-aaae-4b4ab88fbfaf
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: e38d181d-04ad-4f0f-8a2f-38822317e735
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column row_label
+		dataType: string
+		lineageTag: 855270c9-1398-487f-8363-1257495c605d
+		summarizeBy: none
+		sourceColumn: row_label
+		sortByColumn: sort_order
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column disclosed
+		dataType: string
+		isHidden
+		lineageTag: 480cec62-4a8b-4ab3-bd41-c09678eaaa56
+		summarizeBy: none
+		sourceColumn: disclosed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gas_basis
+		dataType: string
+		isHidden
+		lineageTag: a2241d67-2c8f-40fa-a575-93efc5a44dc4
+		summarizeBy: none
+		sourceColumn: gas_basis
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assurance_status
+		dataType: string
+		isHidden
+		lineageTag: fc171636-36af-4859-b618-d1d2e279cad2
+		summarizeBy: none
+		sourceColumn: assurance_status
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assurance_notes
+		dataType: string
+		isHidden
+		lineageTag: c90a722f-7b4b-43a0-a9f4-b1a4e7568f09
+		summarizeBy: none
+		sourceColumn: assurance_notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sort_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f885a6bf-78c6-42be-9295-0142137bd2e6
+		summarizeBy: none
+		sourceColumn: sort_order
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column category_no
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0059b29a-eac2-4ca2-976b-aa66e55396ac
+		summarizeBy: none
+		sourceColumn: category_no
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column category_name
+		dataType: string
+		isHidden
+		lineageTag: ed66d330-0016-4209-b36a-e5ba44107693
+		summarizeBy: none
+		sourceColumn: category_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_document
+		dataType: string
+		isHidden
+		lineageTag: f9763b6a-0b45-4cde-8c90-b3178b417fde
+		summarizeBy: none
+		sourceColumn: source_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column methodology_notes
+		dataType: string
+		isHidden
+		lineageTag: 0ce02871-a78f-41a4-89b8-ae3b0fa88646
+		summarizeBy: none
+		sourceColumn: methodology_notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_page
+		dataType: string
+		isHidden
+		lineageTag: cfc31300-f0b7-42eb-9a4d-e1109dc43f7b
+		summarizeBy: none
+		sourceColumn: source_page
+
+		changedProperty = DataType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column scope_group
+		dataType: string
+		lineageTag: edb251a9-9cf9-4482-bfcd-8e4964ace1ad
+		summarizeBy: none
+		sourceColumn: scope_group
+		sortByColumn: scope_group_order
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column scope_group_order
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c4251e09-6de6-4c85-9921-a62d46823467
+		summarizeBy: sum
+		sourceColumn: scope_group_order
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition disclosure = m
+		mode: import
+		source =
+				let
+				  Source = Table.Combine({disc_scope, disc_cat}),
+				  #"Added custom" = Table.TransformColumnTypes(Table.AddColumn(Source, "scope_group", each if Text.StartsWith([row_label], "Scope 3") then "Scope 3 Total"
+				else if Text.StartsWith([row_label], "Scope") then "Scope 1 & 2"
+				else if Number.From(Text.BetweenDelimiters([row_label], "Cat ", ".")) <= 8 then "Upstream (Cat 1–8)"
+				else "Downstream (Cat 9–15)"), {{"scope_group", type text}}),
+				  #"Added custom 1" = Table.TransformColumnTypes(Table.AddColumn(#"Added custom", "scope_group_order", each if [scope_group] = "Scope 1 & 2" then 1
+				else if [scope_group] = "Scope 3 Total" then 2
+				else if Text.StartsWith([scope_group], "Upstream") then 3
+				else 4), {{"scope_group_order", Int64.Type}})
+				in
+				  #"Added custom 1"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

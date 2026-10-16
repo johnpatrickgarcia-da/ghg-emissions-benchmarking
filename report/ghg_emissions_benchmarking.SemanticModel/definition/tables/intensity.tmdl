@@ -1,0 +1,183 @@
+table intensity
+	lineageTag: 5a523237-e68b-4b64-b0d0-1741a3d728a1
+
+	measure 'Scope 1+2 Intensity Bar Title' =
+			
+			"Scope 1+2 Intensity, "
+			    & SELECTEDVALUE ( fiscal_year[fiscal_year], "all years" )
+			    & " (t CO₂/CO₂e per ¥ billion revenue)"
+		lineageTag: a610334d-7524-4974-952d-7bc753d5edb0
+
+	measure 'Company Tooltip Header' =
+			
+			SELECTEDVALUE ( fundamentals[company_name] ) & " · "
+			    & SELECTEDVALUE ( fiscal_year[fiscal_year] )
+		lineageTag: d58205a8-0e27-470f-8476-a920fc193cbc
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: 22345331-dede-4d2d-9bcc-2643733d8679
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: 728b52c1-f48d-4f7a-ad37-c0b62f9d5e7e
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column scope1_mt
+		dataType: double
+		isHidden
+		lineageTag: d3502e12-4da0-49a3-bc57-793e87401cf6
+		summarizeBy: sum
+		sourceColumn: scope1_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column scope2_mt
+		dataType: double
+		isHidden
+		lineageTag: 3f05ea01-c94e-4d94-b902-ce9aa1e50586
+		summarizeBy: sum
+		sourceColumn: scope2_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column scope12_mt
+		dataType: double
+		isHidden
+		lineageTag: 8dbb412f-dfbc-4946-b992-b68a1a8bad42
+		summarizeBy: sum
+		sourceColumn: scope12_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gas_basis
+		dataType: string
+		isHidden
+		lineageTag: 5e4dcd30-10c4-4a54-b85b-542749c95b77
+		summarizeBy: none
+		sourceColumn: gas_basis
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column revenue_jpy
+		dataType: double
+		isHidden
+		lineageTag: 3ad9d12c-54e3-4892-aaa1-92b5c76a6d00
+		summarizeBy: sum
+		sourceColumn: revenue_jpy
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column headcount
+		dataType: double
+		isHidden
+		lineageTag: 9687cd00-10e0-42c2-9fa0-5c7a45afae2f
+		summarizeBy: sum
+		sourceColumn: headcount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column intensity_t_per_jpy_bn
+		dataType: double
+		isHidden
+		lineageTag: 6b01a135-32ed-48fa-a9f2-ce3c3656f13a
+		summarizeBy: none
+		sourceColumn: intensity_t_per_jpy_bn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column intensity_t_per_emp
+		dataType: double
+		isHidden
+		lineageTag: 4122c7d7-2061-446b-9b45-cb47ec922ce1
+		summarizeBy: none
+		sourceColumn: intensity_t_per_emp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rank_by_revenue
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2893e4c1-352f-4905-a862-f30cc498080b
+		summarizeBy: none
+		sourceColumn: rank_by_revenue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column peer_avg_t_per_jpy_bn
+		dataType: double
+		isHidden
+		lineageTag: f01ecbc7-98a7-4353-93a8-667ae052f610
+		summarizeBy: none
+		sourceColumn: peer_avg_t_per_jpy_bn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition intensity = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost", "ghg_emissions_benchmarking"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "v_intensity"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

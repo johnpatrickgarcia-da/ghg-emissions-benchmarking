@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "fc27be96f9559b74efe0",
+  "position": {
+    "x": 73.9881277989841,
+    "y": 175.96297075531243,
+    "z": 2000,
+    "height": 850.05289892098233,
+    "width": 1771.6323224429684,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Value Chain Emissions",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

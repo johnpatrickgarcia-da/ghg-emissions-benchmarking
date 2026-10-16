@@ -1,0 +1,123 @@
+table scope3_summary
+	isHidden
+	lineageTag: b27a8c2e-9b47-4c96-9ee4-47febd25e2a3
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: a6d03e8b-c337-453b-b128-7a354ee52830
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: 5148316d-2cf7-4dfa-a9a8-dd3761d836d5
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column reported_total_mt
+		dataType: double
+		isHidden
+		lineageTag: 7a3e5e07-5358-458b-b9bf-dcc3a9f32001
+		summarizeBy: sum
+		sourceColumn: reported_total_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sum_of_categories_mt
+		dataType: double
+		isHidden
+		lineageTag: b43de07b-0677-4d24-8760-fdedd08a9d73
+		summarizeBy: sum
+		sourceColumn: sum_of_categories_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column difference_mt
+		dataType: double
+		isHidden
+		lineageTag: 6f07ad2a-9fd7-4763-b273-fb07cb5ec7ac
+		summarizeBy: sum
+		sourceColumn: difference_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column categories_disclosed
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b4b6da59-e625-4cb5-81fa-b91748e6bd78
+		summarizeBy: none
+		sourceColumn: categories_disclosed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column completeness_pct
+		dataType: double
+		isHidden
+		lineageTag: 0fe0c1bd-62b2-4454-bdb9-3e3bc0da7c6f
+		summarizeBy: none
+		sourceColumn: completeness_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cat11_share_pct
+		dataType: double
+		isHidden
+		lineageTag: 64a554ad-6e40-46fd-be78-a930e489f0ad
+		summarizeBy: none
+		sourceColumn: cat11_share_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition scope3_summary = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost", "ghg_emissions_benchmarking"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "v_scope3_summary"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

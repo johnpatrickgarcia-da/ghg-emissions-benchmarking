@@ -1,0 +1,159 @@
+table operations
+	isHidden
+	lineageTag: 959a0132-2507-4061-90fe-be20bc597d5c
+
+	measure 'Revenue (¥ trillion)' = CALCULATE(SUM(operations[value_full]),operations[metric]="Revenue")/1e12
+		isHidden
+		lineageTag: cab6b861-4fc4-45bb-9306-06fb92a744e7
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Headcount = CALCULATE(SUM(operations[value_full]),operations[metric]="Headcount")
+		formatString: #,0
+		isHidden
+		lineageTag: 3549ab90-91c9-48da-ad26-1d2842051a35
+
+		changedProperty = IsHidden
+
+	measure 'Units sold in millions (as reported)' = CALCULATE(SUM(operations[value_full]),operations[metric]="Units sold")/1e6
+		formatString: 0.0
+		isHidden
+		lineageTag: 24665fdf-8a5a-4683-ae44-8f3fbb00bc27
+
+		changedProperty = IsHidden
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: 611b6832-11ad-4e17-8857-af7e7e721889
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 11b58a88-f3a1-4548-8dbe-f6f7d323b506
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column metric
+		dataType: string
+		isHidden
+		lineageTag: 408b911e-a868-4694-ab47-cff9e7508d6b
+		summarizeBy: none
+		sourceColumn: metric
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column value_reported
+		dataType: double
+		isHidden
+		lineageTag: f779892f-69c0-4615-b83f-118850620404
+		summarizeBy: sum
+		sourceColumn: value_reported
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_scale
+		dataType: double
+		isHidden
+		lineageTag: c1ca01f3-1a35-4f7c-9125-eb03738e1c51
+		summarizeBy: sum
+		sourceColumn: unit_scale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column value_full
+		dataType: double
+		isHidden
+		lineageTag: 7e91310c-9ace-4c03-bc04-02474add0cde
+		summarizeBy: none
+		sourceColumn: value_full
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_label
+		dataType: string
+		isHidden
+		lineageTag: cf69c6a9-b6a5-410c-b6ac-55180caadbda
+		summarizeBy: none
+		sourceColumn: unit_label
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_document
+		dataType: string
+		isHidden
+		lineageTag: c2136157-f42d-4c25-b0d5-026f19ef64d7
+		summarizeBy: none
+		sourceColumn: source_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_page
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 236b3ed3-ad9b-47f0-8888-1c777077a03a
+		summarizeBy: sum
+		sourceColumn: source_page
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column methodology_notes
+		dataType: string
+		isHidden
+		lineageTag: 5ba2e1b0-6a61-4b66-bf6a-0461c4df2910
+		summarizeBy: none
+		sourceColumn: methodology_notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition operations = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost", "ghg_emissions_benchmarking"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "v_operations"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+

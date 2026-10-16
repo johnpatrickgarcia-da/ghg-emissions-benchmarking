@@ -1,0 +1,35 @@
+table fiscal_year
+	lineageTag: 1ad1240c-1206-482e-9f38-14cceace950c
+
+	column fiscal_year_end
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: 79a728aa-54ce-49ca-8120-5e7e3a9aa544
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: emissions[fiscal_year_end]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column fiscal_year
+		lineageTag: 7b076396-ccc7-4243-a8e8-cd5c4cd69dd4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [fiscal_year]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fiscal_year = calculated
+		mode: import
+		source =
+				ADDCOLUMNS(
+				    DISTINCT('emissions'[fiscal_year_end]),
+				    "fiscal_year", "FY" & YEAR([fiscal_year_end])
+				    )
+
+	annotation PBI_Id = e45fa3b9b2754de0ba22e923c80acabc
+

@@ -1,0 +1,267 @@
+company_id,fiscal_year_end,category_no,category_name,disclosed,value_reported,unit_reported,boundary_method,assurance_status,source_document,source_page,methodology_notes,assurance_notes,notes
+TYT,2025-03-31,1,Purchased goods and services,Yes,126.33,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,1,Purchased goods and services,Yes,129.88,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Restated — see Data Book 2024, p.53: (123.80 million t-CO₂). 
+Methodology changed based on the Japan Automobile Manufacturers Association (JAMA) guidelines — see Data Book 2025, p.61, fn.1.","Original value not verified under limited assurance engagement for the year ended March 31, 2024. 
+Current value not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,1,Purchased goods and services,Yes,122.47,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Restated — see Data Book 2023, p.48: (110.49 million t-CO₂). 
+Methodology changed based on the Japan Automobile Manufacturers Association (JAMA) guidelines — see Data Book 2025, p.61, fn.1.","Original value verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Current value not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,2,Capital goods,Yes,4.32,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,2,Capital goods,Yes,6.09,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,2,Capital goods,Yes,5.05,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,1.04,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,1,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,1.2,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,4,Upstream transportation and distribution,Yes,5.3,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,4,Upstream transportation and distribution,Yes,4.57,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,4,Upstream transportation and distribution,Yes,4.33,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,5,Waste generated in operations,Yes,0.11,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,5,Waste generated in operations,Yes,0.1,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,5,Waste generated in operations,Yes,0.1,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,6,Business travel,Yes,0.11,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,6,Business travel,Yes,0.09,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,6,Business travel,Yes,0.06,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,7,Employee commuting,Yes,0.06,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Some emissions recorded are under category 11 in scope 3 — see Data Book 2025, p.61, fn.2.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,7,Employee commuting,Yes,0.59,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,7,Employee commuting,Yes,0.61,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,"Recorded under scope 1 and 2 — see Data Book 2025, p.61, fn.3.",,
+TYT,2024-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,"Recorded under scope 1 and 2 — see Data Book 2025, p.61, fn.3.",,
+TYT,2023-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,"Recorded under scope 1 and 2 — see Data Book 2025, p.61, fn.3.",,
+TYT,2025-03-31,9,Downstream transportation and distribution,Yes,0.2,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,9,Downstream transportation and distribution,Yes,0.1,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,9,Downstream transportation and distribution,Yes,0.06,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,10,Processing of sold products,Yes,0.01,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,10,Processing of sold products,Yes,0.01,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Restated — see Data Book 2024, p.53: (0.003 million t-CO₂). 
+Calculation conditions changed based on JAMA guidelines — see Data Book 2025, p.61, fn.4.","Original value not verified under limited assurance engagement for the year ended March 31, 2024. 
+Current value not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,10,Processing of sold products,Yes,0.01,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Restated — see Data Book 2023, p.48: (0.12 million t-CO₂). 
+Calculation conditions changed based on JAMA guidelines — see Data Book 2025, p.61, fn.4.","Original value verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Current value not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,11,Use of sold products,Yes,432.16,million t-CO₂e,Not Stated,Limited Assurance,Toyota Sustainability Data Book 2025,61,,"Verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.70.",
+TYT,2024-03-31,11,Use of sold products,Yes,436.28,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53.","Verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,11,Use of sold products,Yes,439.45,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,12,End-of-life treatment of sold products,Yes,12.09,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,12,End-of-life treatment of sold products,Yes,12.14,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Restated — see Data Book 2024, p.53: (10.85 million t-CO₂). 
+Calculation conditions changed based on JAMA guidelines — see Data Book 2025, p.61, fn.4.","Original value not verified under limited assurance engagement for the year ended March 31, 2024. 
+Current value not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,12,End-of-life treatment of sold products,Yes,11.23,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Restated — see Data Book 2023, p.48: (4.82 million t-CO₂). 
+Calculation conditions changed based on JAMA guidelines — see Data Book 2025, p.61, fn.4.","Original value verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Current value not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,13,Downstream leased assets,Yes,0.15,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,13,Downstream leased assets,Yes,0.02,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,13,Downstream leased assets,No,,N/A,N/A,N/A,N/A,,"Data entered as '-' in the report — see Data Book 2025, p.61. 
+Recorded under scope 1 and 2 — see Data Book 2023, p.48, fn.1.",,
+TYT,2025-03-31,14,Franchises,Yes,2.64,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,14,Franchises,Yes,3.85,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,14,Franchises,Yes,4.07,million t-CO₂,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48. 
+Calculated based on 10,000 tons of CO₂ — see Data Book 2025, p.61, fn.7.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2025-03-31,15,Investments,Yes,0.02,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2024-03-31,15,Investments,Yes,0.12,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2024, p.53.","Not verified under limited assurance engagement for the year ended March 31, 2024. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+TYT,2023-03-31,15,Investments,Yes,0.13,million t-CO₂e,Not Stated,No Assurance,Toyota Sustainability Data Book 2025,61,"Not restated — see Data Book 2023, p.48.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.55. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,1,Purchased goods and services,Yes,50.14,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,1,Purchased goods and services,Yes,52.13,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,1,Purchased goods and services,Yes,50.06,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,2,Capital goods,Yes,1.55,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,2,Capital goods,Yes,1.12,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,2,Capital goods,Yes,1.42,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,0.45,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,0.49,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,0.45,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,4,Upstream transportation and distribution,Yes,3.14,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,4,Upstream transportation and distribution,Yes,2.95,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,4,Upstream transportation and distribution,Yes,2.79,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,5,Waste generated in operations,Yes,0.19,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,5,Waste generated in operations,Yes,0.21,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,5,Waste generated in operations,Yes,0.2,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,6,Business travel,Yes,0.29,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,6,Business travel,Yes,0.3,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,6,Business travel,Yes,0.31,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,7,Employee commuting,Yes,0.16,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,7,Employee commuting,Yes,0.16,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,7,Employee commuting,Yes,0.16,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2024-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2023-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2025-03-31,9,Downstream transportation and distribution,Yes,0.86,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,9,Downstream transportation and distribution,Yes,0.73,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,9,Downstream transportation and distribution,Yes,0.73,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,10,Processing of sold products,Yes,0,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,10,Processing of sold products,Yes,0,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,10,Processing of sold products,Yes,0,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,11,Use of sold products,Yes,232.2,million t-CO₂e,Not Stated,Limited Assurance,Honda ESG Report 2025,60,,"Only Scope 3 Cat 11 verified under limited assurance engagement for the year ended March 31, 2025 — see ESG Report 2025, p.211.",
+HND,2024-03-31,11,Use of sold products,Yes,212.2,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Not restated — see Data Book 2024, p.150.","Verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.166. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,11,Use of sold products,Yes,226.86,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Not restated — see Data Book 2023, p.138.","Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.155. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,12,End-of-life treatment of sold products,Yes,4.88,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,12,End-of-life treatment of sold products,Yes,4.84,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,12,End-of-life treatment of sold products,Yes,4.58,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2025-03-31,13,Downstream leased assets,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2024-03-31,13,Downstream leased assets,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2023-03-31,13,Downstream leased assets,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2025-03-31,14,Franchises,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2024-03-31,14,Franchises,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2023-03-31,14,Franchises,No,,N/A,N/A,N/A,N/A,,"Categories 8, 13 and 14 are either not part of Honda business activities or emissions are accounted for in other categories — see ESG Report 2025, p.61.",,
+HND,2025-03-31,15,Investments,Yes,0.37,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,,"Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2024-03-31,15,Investments,Yes,0.33,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2024, p.150.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+HND,2023-03-31,15,Investments,Yes,0.4,million t-CO₂e,Not Stated,No Assurance,Honda ESG Report 2025,60,"Previous report aggregated this category under ""Scope 3, other categories"" — see Data Book 2023, p.138.","Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,1,Purchased goods and services,Yes,23365,kt-CO₂,Not Stated,Limited Assurance,Nissan Sustainability Data Book 2025,149,"Calculation method revised for the year ended March 31, 2025: per-vehicle CO₂ from raw-material inputs (Sphera GaBi) × global sales volume — see Data Book 2025, p.62. 
+Prior years not recalculated under the new method; not comparable year over year.","Verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,1,Purchased goods and services,Yes,12012,kt-CO₂,Not Stated,Limited Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,1,Purchased goods and services,Yes,11840,kt-CO₂,Not Stated,Limited Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,2,Capital goods,Yes,1271,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,2,Capital goods,Yes,1277,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,2,Capital goods,Yes,1066,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,225,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,249,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,246,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,4,Upstream transportation and distribution,Yes,1643,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,4,Upstream transportation and distribution,Yes,1851,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,4,Upstream transportation and distribution,Yes,768,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,5,Waste generated in operations,Yes,109,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,5,Waste generated in operations,Yes,147,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,5,Waste generated in operations,Yes,118,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,6,Business travel,Yes,178,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,6,Business travel,Yes,278,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,6,Business travel,Yes,66,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,7,Employee commuting,Yes,153,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,7,Employee commuting,Yes,192,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,7,Employee commuting,Yes,134,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,Data entered as '-' in the report.,,
+NSN,2024-03-31,8,Upstream leased assets,Yes,0,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,8,Upstream leased assets,Yes,0,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,9,Downstream transportation and distribution,Yes,607,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,9,Downstream transportation and distribution,Yes,605,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,9,Downstream transportation and distribution,Yes,523,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,10,Processing of sold products,Yes,6,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,10,Processing of sold products,Yes,7,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,10,Processing of sold products,Yes,6,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,11,Use of sold products,Yes,125080,kt-CO₂,Not Stated,Limited Assurance,Nissan Sustainability Data Book 2025,149,"Calculation method revised for the year ended March 31, 2025: regional average per-vehicle use-phase CO₂ (Well-to-Wheel, GLEC Framework) × estimated lifetime mileage × sales volume — see Data Book 2025, p.62. 
+Prior years not recalculated under the new method; not comparable year over year.","Verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,11,Use of sold products,Yes,99185,kt-CO₂,Not Stated,Limited Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,11,Use of sold products,Yes,103391,kt-CO₂,Not Stated,Limited Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,12,End-of-life treatment of sold products,Yes,232,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,12,End-of-life treatment of sold products,Yes,257,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,12,End-of-life treatment of sold products,Yes,253,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,13,Downstream leased assets,Yes,497,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,13,Downstream leased assets,Yes,499,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,13,Downstream leased assets,Yes,417,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,14,Franchises,No,,N/A,N/A,N/A,N/A,,Data entered as '-' in the report.,,
+NSN,2024-03-31,14,Franchises,Yes,0,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,14,Franchises,Yes,0,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2025-03-31,15,Investments,Yes,122,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2025,149,,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2025 — see Data Book 2025, p.61.",
+NSN,2024-03-31,15,Investments,Yes,141,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2024,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2024 — see Data Book 2024, p.61. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+NSN,2023-03-31,15,Investments,Yes,0,kt-CO₂,Not Stated,No Assurance,Nissan Sustainability Data Book 2023,151,Not republished in Data Book 2025; value taken from the original report.,"Only Scope 3 Cat 1 and 11 verified under limited assurance engagement for the year ended March 31, 2023 — see Data Book 2023, p.58. 
+Not verified under limited assurance engagement for the year ended March 31, 2025.",
+SBR,2025-03-31,1,Purchased goods and services,Yes,5902914,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,1,Purchased goods and services,Yes,5861321,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,1,Purchased goods and services,Yes,5018874,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Restated — see Sustainability Website 2023, p.72: (1,726,493 t-CO₂). 
+See Sustainability Website 2024, p.46, fn.: ""Retroactive correction has been made to data from previous years due to revisions to the calculation method-.""",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,2,Capital goods,Yes,577752,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,2,Capital goods,Yes,549384,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,2,Capital goods,Yes,402915,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,55697,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,54958,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,3,Fuel- and energy-related activities (not S1/S2),Yes,95352,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,4,Upstream transportation and distribution,Yes,516878,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,4,Upstream transportation and distribution,Yes,500914,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,4,Upstream transportation and distribution,Yes,426929,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,5,Waste generated in operations,Yes,26081,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,5,Waste generated in operations,Yes,8608,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,5,Waste generated in operations,Yes,28733,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,6,Business travel,Yes,4923,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,6,Business travel,Yes,4900,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,6,Business travel,Yes,4878,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,7,Employee commuting,Yes,14954,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,7,Employee commuting,Yes,14885,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,7,Employee commuting,Yes,14818,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2024-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2023-03-31,8,Upstream leased assets,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2025-03-31,9,Downstream transportation and distribution,Yes,9295,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,9,Downstream transportation and distribution,Yes,3521,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2024, p.46.",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,9,Downstream transportation and distribution,Yes,4043,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,10,Processing of sold products,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2024-03-31,10,Processing of sold products,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2023-03-31,10,Processing of sold products,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2025-03-31,11,Use of sold products,Yes,29799828,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,11,Use of sold products,Yes,31859417,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Restated — see Sustainability Website 2024, p.46: (31,864,033 t-CO₂).",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,11,Use of sold products,Yes,27453385,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Not restated — see Sustainability Website 2023, p.72.",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,12,End-of-life treatment of sold products,Yes,582477,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,12,End-of-life treatment of sold products,Yes,602519,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Restated — see Sustainability Website 2024, p.46: (577,694 t-CO₂). 
+See Sustainability Website 2025, p.54, fn: ""Retroactive correction has been made to data from previous years due to revisions to the calculation method-.""",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,12,End-of-life treatment of sold products,Yes,512716,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Restated — see Sustainability Website 2023, p.72: (480,917 t-CO₂). 
+See Sustainability Website 2025, p.54, fn: ""Retroactive correction has been made to data from previous years due to revisions to the calculation method-.""",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,13,Downstream leased assets,Yes,6852,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,,Report did not disclose any third-party assurance.,
+SBR,2024-03-31,13,Downstream leased assets,Yes,6259,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Restated — see Sustainability Website 2024, p.46: (1,562 t-CO₂). 
+See Sustainability Website 2025, p.54, fn: ""Retroactive correction has been made to data from previous years due to revisions to the calculation method-.""",Report did not disclose any third-party assurance.,
+SBR,2023-03-31,13,Downstream leased assets,Yes,7376,t-CO₂,Not Stated,No Assurance,Subaru Sustainability Website 2025,53,"Restated — see Sustainability Website 2023, p.72: (1,984 t-CO₂). 
+See Sustainability Website 2025, p.54, fn: ""Retroactive correction has been made to data from previous years due to revisions to the calculation method-.""",Report did not disclose any third-party assurance.,
+SBR,2025-03-31,14,Franchises,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2024-03-31,14,Franchises,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2023-03-31,14,Franchises,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2025-03-31,15,Investments,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2024-03-31,15,Investments,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,
+SBR,2023-03-31,15,Investments,No,,N/A,N/A,N/A,N/A,,Data entered as 'N/A' in the report.,,

@@ -1,0 +1,147 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "c4d8cb2c3e93b34a2774",
+  "position": {
+    "x": 0,
+    "y": 696.85185185185185,
+    "z": 0,
+    "height": 141.66666666666669,
+    "width": 1768.3333333333335,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Notes",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ":"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": " • ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "Honda figures cover its consolidated group",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ","
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "including motorcycles, power products and financial services; they cannot be separated from automobiles in the disclosed data."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": " "
+                  },
+                  {
+                    "value": "• ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "Subaru restated its FY2023–FY2024 Scope 1+2",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": ", citing aggregation errors, and the domestic scope it reports changed (52 to 39 consolidated subsidiaries), so part of the change may reflect scope, not operations.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": " • ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "Gas basis differs",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": ": Honda reports Scope 1+2 in CO₂e; Nissan, Subaru and Toyota report CO₂ only. In FY2025, Nissan, Subaru and Honda are within about 1% of each other, so their order is not meaningful."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": " • ",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": "Revenue is reported in yen",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": "; currency movements may affect intensity trends."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'S12 Intensity Bar Chart Notes'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "fe9f0b021ef14a9ac883"
+}

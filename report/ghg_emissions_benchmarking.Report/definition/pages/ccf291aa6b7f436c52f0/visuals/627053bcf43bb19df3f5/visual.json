@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "627053bcf43bb19df3f5",
+  "position": {
+    "x": 75,
+    "y": 188.33333333333334,
+    "z": 2000,
+    "height": 686.66666666666674,
+    "width": 321.66666666666669,
+    "tabOrder": 3000
+  },
+  "visualGroup": {
+    "displayName": "Company Profile",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

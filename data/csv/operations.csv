@@ -1,0 +1,60 @@
+company_id,fiscal_year_end,metric,value_reported,unit_label,unit_scale,source_document,source_page,methodology_notes,notes
+TYT,2025-03-31,Headcount,383853,persons,1,Toyota Sustainability Data Book 2025,125,"Consolidated number, inclusion of part-time employees not specified — see Data Book 2025, p.125.",
+TYT,2024-03-31,Headcount,380793,persons,1,Toyota Sustainability Data Book 2025,125,"Not restated — see Data Book 2024, p.110. 
+Consolidated number, inclusion of part-time employees not specified — see Data Book 2025, p.125.",
+TYT,2023-03-31,Headcount,375235,persons,1,Toyota Sustainability Data Book 2025,125,"Not restated — see Data Book 2023, p.103. 
+Consolidated number, inclusion of part-time employees not specified — see Data Book 2025, p.125.",
+TYT,2025-03-31,JPY to USD Exchange Rate,153,JPY/USD,1,Toyota Integrated Report 2025,163,,
+TYT,2024-03-31,JPY to USD Exchange Rate,145,JPY/USD,1,Toyota Integrated Report 2025,163,"Not restated — see Integrated Report 2024, p.133.",
+TYT,2023-03-31,JPY to USD Exchange Rate,135,JPY/USD,1,Toyota Integrated Report 2025,163,"Not restated — see Integrated Report 2023, p.103.",
+TYT,2025-03-31,Revenue,48036.7,JPY,1000000000,Toyota Integrated Report 2025,163,,
+TYT,2024-03-31,Revenue,45095.3,JPY,1000000000,Toyota Integrated Report 2025,163,"Not restated — see Integrated Report 2024, p.133.",
+TYT,2023-03-31,Revenue,37154.2,JPY,1000000000,Toyota Integrated Report 2025,163,"Not restated — see Integrated Report 2023, p.103.",
+TYT,2025-03-31,Units sold,9362410,units,1,Toyota Sustainability Data Book 2025,5,,
+TYT,2024-03-31,Units sold,9442770,units,1,Toyota Sustainability Data Book 2024,5,Not republished in Data Book 2025; value taken from the original report.,
+TYT,2023-03-31,Units sold,8821872,units,1,Toyota Sustainability Data Book 2023,5,Not republished in Data Book 2025; value taken from the original report.,
+HND,2025-03-31,Headcount,193052,persons,1,Honda ESG Report 2025,120,"Honda Report 2025 reports 194,173 associates (p.92), but ESG Report figure is used for consistency with the emissions source. 
+Consolidated number, inclusion of part-time employees not specified — see ESG Report 2025, p.120.",
+HND,2024-03-31,Headcount,194993,persons,1,Honda ESG Report 2025,120,"Not restated — see Data Book 2024, p.156. 
+Consolidated number, inclusion of part-time employees not specified — see ESG Report 2025, p.120.",
+HND,2023-03-31,Headcount,197039,persons,1,Honda ESG Report 2025,120,"Not restated — see Data Book 2023, p.144. 
+Consolidated number, inclusion of part-time employees not specified — see ESG Report 2025, p.120.",
+HND,2025-03-31,JPY to USD Exchange Rate,153,JPY/USD,1,Honda Report 2025,91,,
+HND,2024-03-31,JPY to USD Exchange Rate,145,JPY/USD,1,Honda Report 2025,91,"Not restated — see Honda Report 2024, p.128.",
+HND,2023-03-31,JPY to USD Exchange Rate,136,JPY/USD,1,Honda Report 2025,91,"Not restated — see Honda Report 2023, p.71.",
+HND,2025-03-31,Revenue,21688767,JPY,1000000,Honda Report 2025,91,,
+HND,2024-03-31,Revenue,20428802,JPY,1000000,Honda Report 2025,91,"Not restated — see Honda Report 2024, p.128.",
+HND,2023-03-31,Revenue,16907725,JPY,1000000,Honda Report 2025,91,"Not restated — see Honda Report 2023, p.71.",
+HND,2025-03-31,Units sold,2798.8,units,10000,Honda Report 2025,7,"Global sales figures include motorcycles, automobiles and power products (power products: 370.0 ten thousand units) — see Honda Report 2025, p.7.",
+HND,2024-03-31,Units sold,2674,units,10000,Honda Report 2024,5,"Global sales figures include motorcycles, automobiles and power products (power products: 381.2 ten thousand units) — see Honda Report 2024, p.5.
+Not republished in Honda Report 2025; value taken from the original report.",
+HND,2023-03-31,Units sold,2808.9,units,10000,Honda Report 2023,3,"Global sales figures include motorcycles, automobiles and power products (power products: 564.5 ten thousand units) — see Honda Report 2023, p.3.
+Not republished in Honda Report 2025; value taken from the original report.",
+NSN,2025-03-31,Headcount,132790,persons,1,Nissan Sustainability Data Book 2025,157,"Consolidated number, not including part-time employees — see Data Book 2025, p.157, fn.1.",
+NSN,2024-03-31,Headcount,133580,persons,1,Nissan Sustainability Data Book 2025,157,"Not restated — see Data Book 2024, p.160. 
+Consolidated number, not including part-time employees — see Data Book 2025, p.157, fn.1.",
+NSN,2023-03-31,Headcount,131719,persons,1,Nissan Sustainability Data Book 2025,157,"Not restated — see Data Book 2023, p.160. 
+Consolidated number, not including part-time employees — see Data Book 2025, p.157, fn.1.",
+NSN,2025-03-31,JPY to USD Exchange Rate,153,JPY/USD,1,Nissan Financial Results Summary Sheet FY2024,1,,
+NSN,2024-03-31,JPY to USD Exchange Rate,145,JPY/USD,1,Nissan Financial Results Summary Sheet FY2024,1,,
+NSN,2023-03-31,JPY to USD Exchange Rate,136,JPY/USD,1,Nissan Financial Results Summary Sheet FY2023,1,Not republished in Financial Results Summary Sheet FY2024; value taken from the original report.,
+NSN,2025-03-31,Revenue,12633.2,JPY,1000000000,Nissan Sustainability Data Book 2025,141,Revenue as Net Sales.,
+NSN,2024-03-31,Revenue,12685.7,JPY,1000000000,Nissan Sustainability Data Book 2025,141,"Not restated — see Data Book 2024, p.141. Revenue as Net Sales.",
+NSN,2023-03-31,Revenue,10596.7,JPY,1000000000,Nissan Sustainability Data Book 2025,141,"Not restated — see Data Book 2023, p.141. Revenue as Net Sales.",
+NSN,2025-03-31,Units sold,3346,units,1000,Nissan Sustainability Data Book 2025,141,,
+NSN,2024-03-31,Units sold,3442,units,1000,Nissan Sustainability Data Book 2025,141,"Not restated — see Data Book 2024, p.142.",
+NSN,2023-03-31,Units sold,3305,units,1000,Nissan Sustainability Data Book 2025,141,"Not restated — see Data Book 2023, p.142.",
+SBR,2025-03-31,Headcount,37866,persons,1,Subaru Integrated Report 2025,50,"Consolidated number, inclusion of part-time employees not specified — see Integrated Report 2025, p.50.",
+SBR,2024-03-31,Headcount,37693,persons,1,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2024, p.47. 
+Consolidated number, inclusion of part-time employees not specified — see Integrated Report 2025, p.50.",
+SBR,2023-03-31,Headcount,37521,persons,1,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2023, p.45. 
+Consolidated number, inclusion of part-time employees not specified — see Integrated Report 2025, p.50.",
+SBR,2025-03-31,JPY to USD Exchange Rate,152,JPY/USD,1,Subaru Integrated Report 2025,50,,
+SBR,2024-03-31,JPY to USD Exchange Rate,144,JPY/USD,1,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2024, p.47.",
+SBR,2023-03-31,JPY to USD Exchange Rate,135,JPY/USD,1,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2023, p.45.",
+SBR,2025-03-31,Revenue,4685763,JPY,1000000,Subaru Integrated Report 2025,50,,
+SBR,2024-03-31,Revenue,4702947,JPY,1000000,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2024, p.47.",
+SBR,2023-03-31,Revenue,3774468,JPY,1000000,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2023, p.45.",
+SBR,2025-03-31,Units sold,936,units,1000,Subaru Integrated Report 2025,50,,
+SBR,2024-03-31,Units sold,976,units,1000,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2024, p.47.",
+SBR,2023-03-31,Units sold,852,units,1000,Subaru Integrated Report 2025,50,"Not restated — see Integrated Report 2023, p.45.",

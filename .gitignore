@@ -17,3 +17,12 @@ __pycache__/
 .vscode/
 
 data/sources/
+
+# Local backups, not for the repo
+_backup/
+
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+_backup_pbip_20261009/
+data/_backup_restated_20261014/
+*- Copy.pbix

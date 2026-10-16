@@ -1,0 +1,56 @@
+relationship 3ff3e0b6-2b52-0216-22d3-831e066e05b8
+	fromColumn: emissions.company_id
+	toColumn: fundamentals.company_id
+
+relationship 0537357c-b653-238a-f5f4-a698778f97cd
+	fromColumn: intensity.company_id
+	toColumn: fundamentals.company_id
+
+relationship 08725581-41d5-fd2b-e779-a38147ce82c1
+	fromColumn: scope3.company_id
+	toColumn: fundamentals.company_id
+
+relationship 95360d7a-50ae-b9a0-3b45-2838997a2c93
+	fromColumn: scope3_summary.company_id
+	toColumn: fundamentals.company_id
+
+relationship 781df175-8153-66b2-bcc7-03ff000bf423
+	fromColumn: yoy.company_id
+	toColumn: fundamentals.company_id
+
+relationship 462af7f0-3a49-46f8-4c87-7a9b700e0c70
+	fromColumn: yoy.fiscal_year_end
+	toColumn: fiscal_year.fiscal_year_end
+
+relationship 62306c1a-f962-97af-25b8-dc32d9b06b51
+	fromColumn: scope3_summary.fiscal_year_end
+	toColumn: fiscal_year.fiscal_year_end
+
+relationship 9b0afde4-b3c0-3721-7df9-87565757a56e
+	fromColumn: scope3.fiscal_year_end
+	toColumn: fiscal_year.fiscal_year_end
+
+relationship 229fad9d-b185-b994-c353-3f11d6b6721a
+	fromColumn: intensity.fiscal_year_end
+	toColumn: fiscal_year.fiscal_year_end
+
+relationship e359c18c-b499-6ea2-7816-83740f9a17fc
+	fromColumn: emissions.fiscal_year_end
+	toColumn: fiscal_year.fiscal_year_end
+
+relationship 376343e7-46fb-5c15-a958-07ee011ed377
+	fromColumn: operations.company_id
+	toColumn: fundamentals.company_id
+
+relationship f0b692d7-e6b6-9fb8-f7a0-d99a7bff2091
+	fromColumn: operations.fiscal_year_end
+	toColumn: fiscal_year.fiscal_year_end
+
+relationship 3273f88c-b582-602c-ab71-7434811f5bca
+	fromColumn: disclosure.company_id
+	toColumn: fundamentals.company_id
+
+relationship 72e56970-654b-0686-bcbb-798f46a0561c
+	fromColumn: disclosure.fiscal_year_end
+	toColumn: fiscal_year.fiscal_year_end
+

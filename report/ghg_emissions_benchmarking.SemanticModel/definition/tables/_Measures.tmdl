@@ -1,0 +1,142 @@
+table _Measures
+	lineageTag: af4257fe-f821-4c59-9a53-fbae61bbbc5e
+
+	measure 'Intensity (t per ¥bn)' = AVERAGE(intensity[intensity_t_per_jpy_bn])
+		formatString: 0.0
+		lineageTag: 6dbd0453-79f9-4b29-b11f-7e6584b7e428
+
+	measure 'Intensity (t per employee)' = AVERAGE(intensity[intensity_t_per_emp])
+		formatString: 0.0
+		lineageTag: e72b7023-812a-400e-8cb1-19251c8ac5c0
+
+	measure 'Lowest Intensity Company' = CALCULATE(SELECTEDVALUE(fundamentals[company_name]),TOPN(1,VALUES(fundamentals[company_name]),[Intensity (t per ¥bn)],ASC))
+		lineageTag: d88c0b3f-3497-4393-8723-806f1e9393fa
+
+	measure 'Peer Average Intensity (t per ¥bn)' = AVERAGEX(VALUES(fundamentals[company_name]),[Intensity (t per ¥bn)])
+		formatString: 0.0
+		lineageTag: 73e3d26b-4039-4c3b-aefb-bf1b01409e62
+
+	measure 'Rank label' = MAX(intensity[rank_by_revenue]) & " of 4"
+		lineageTag: 7c1bddd6-f6b3-4878-bfea-b2c88f11e759
+
+	measure 'Intensity YoY %' = AVERAGE(yoy[intensity_change_pct])/100
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 1a322749-d854-401d-96b9-011272fc39b2
+
+	measure 'Scope 1+2 YoY %' = AVERAGE(yoy[scope12_change_pct])/100
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 2fff627c-8923-472b-94da-22a12e3d9d50
+
+	measure 'Largest Scope 1+2 Reduction' = CALCULATE(SELECTEDVALUE(fundamentals[company_name]),TOPN(1,VALUES(fundamentals[company_name]),[Scope 1+2 YoY %],ASC))
+		lineageTag: 21e6cd78-095c-461d-ba50-1a0ca88a93ab
+
+	measure 't per ¥bn' = MINX(VALUES(fundamentals[company_name]),[Intensity (t per ¥bn)])
+		formatString: 0.0
+		lineageTag: fa93145e-009e-412c-848c-57000629cb63
+
+	measure 'Scope 1+2 YoY' = MINX(VALUES(fundamentals[company_name]),[Scope 1+2 YoY %])
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 52451328-5c62-45eb-9740-38d004d0aa9e
+
+	measure 'Methodology Note' = SELECTEDVALUE ( scope3[methodology_notes] )
+		isHidden
+		lineageTag: 999cad0b-d2c1-44b2-bc53-0d49213d07b6
+
+		changedProperty = IsHidden
+
+	measure 'Assurance Note' = SELECTEDVALUE ( scope3[assurance_notes] )
+		isHidden
+		lineageTag: 01d64139-863d-4197-8db8-9b537ec407ed
+
+		changedProperty = IsHidden
+
+	measure 'S12 Index' =
+			
+			DIVIDE(
+			    [S12 (Mt)],
+			    CALCULATE([S12 (Mt)], fiscal_year[fiscal_year] = "FY2023")
+			) * 100
+		formatString: 0.0
+		lineageTag: 124f37d0-e8de-4cc6-b805-ecfdbefde08c
+
+	measure 'Revenue Index' =
+			
+			DIVIDE(
+			    [Revenue (¥ trillion)],
+			    CALCULATE([Revenue (¥ trillion)], fiscal_year[fiscal_year] = "FY2023")
+			) * 100
+		formatString: 0.0
+		lineageTag: 2014337c-16b4-46dc-8bec-169135567ad7
+
+	measure 'Intensity Index' =
+			
+			DIVIDE(
+			    [Intensity (t per ¥bn)],
+			    CALCULATE([Intensity (t per ¥bn)], fiscal_year[fiscal_year] = "FY2023")
+			) * 100
+		formatString: 0.0
+		lineageTag: 4c0b98d6-403e-45f7-a394-2f75de34e754
+
+	measure 'Scope 1+2 Intensity Trend Title' =
+			
+			"Emissions, Revenue and Intensity, "
+			    & SELECTEDVALUE ( fundamentals[company_name], "select a company" )
+			    & " (FY2023 Baseline)"
+		lineageTag: 8f61fed1-b32e-4c12-a2fa-b993e4ea26ab
+
+	measure 'Scope 1+2 Intensity Trend Subtitle' =
+			
+			VAR _company = SELECTEDVALUE ( fundamentals[company_name], "The selected company" )
+			VAR _s12 = CALCULATE ( [S12 Index], fiscal_year[fiscal_year] = "FY2025" ) / 100 - 1
+			VAR _rev = CALCULATE ( [Revenue Index], fiscal_year[fiscal_year] = "FY2025" ) / 100 - 1
+			VAR _int = CALCULATE ( [Intensity Index], fiscal_year[fiscal_year] = "FY2025" ) / 100 - 1
+			RETURN
+			    "FY2023 to FY2025: " & _company & "'s Scope 1+2 Emissions "
+			        & FORMAT ( _s12, "+0.0%;-0.0%" ) & ", Revenue "
+			        & FORMAT ( _rev, "+0.0%;-0.0%" ) & ", Intensity "
+			        & FORMAT ( _int, "+0.0%;-0.0%" ) & "."
+			        & UNICHAR ( 10 )
+			        & "Intensity falls when revenue grows faster than emissions, whether emissions rise or fall."
+		isHidden
+		lineageTag: 8121f207-2f9d-422b-b091-f5b0024194be
+
+		changedProperty = IsHidden
+
+	measure 'S12 Change Label' =
+			
+			IF (
+			    SELECTEDVALUE ( fiscal_year[fiscal_year] ) = "FY2023",
+			    "",
+			    FORMAT ( [S12 Index] / 100 - 1, "+0.0%;-0.0%" )
+			)
+		lineageTag: 7991351a-f993-4ce4-bc09-d8811a714833
+
+	measure 'Revenue Change Label' =
+			
+			IF (
+			    SELECTEDVALUE ( fiscal_year[fiscal_year] ) = "FY2023",
+			    "",
+			    FORMAT ( [Revenue Index] / 100 - 1, "+0.0%;-0.0%" )
+			)
+		lineageTag: 8aec3951-a96f-4366-bcfb-37ac679953cc
+
+	measure 'Intensity Change Label' =
+			
+			IF (
+			    SELECTEDVALUE ( fiscal_year[fiscal_year] ) = "FY2023",
+			    "",
+			    FORMAT ([Intensity Index] / 100 - 1, "+0.0%;-0.0%" )
+			)
+		lineageTag: 2799637e-aa38-4d23-b077-c7a990ef7505
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Removed Columns" = Table.RemoveColumns(Source,{"Column1"})
+				in
+				  #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

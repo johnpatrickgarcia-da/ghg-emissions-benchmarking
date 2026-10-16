@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "af0a0ed1b518b768c05e",
+  "position": {
+    "x": 59.623816536924046,
+    "y": 171.60025247212286,
+    "z": 2000,
+    "height": 898.71996633705032,
+    "width": 1797.4399326741006,
+    "tabOrder": 2000
+  },
+  "visualGroup": {
+    "displayName": "Disclosure And Assurance",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

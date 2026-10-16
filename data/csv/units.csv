@@ -1,0 +1,6 @@
+unit_reported,unit_standard,conversion_factor,notes
+million t-CO₂e,million t-CO₂e,1,Standard unit — no conversion needed
+million t-CO₂,million t-CO₂e,1,CO₂ only vs CO₂e
+N/A,N/A,,N/A
+kt-CO₂,million t-CO₂e,0.001,Kilotonnes CO₂ — divide by 1000 to get million t; CO₂ only not CO₂e.
+t-CO₂,million t-CO₂e,0.000001,"Tonnes CO₂ — divide by 1,000,000 to get million t; CO₂ only not CO₂e"

@@ -1,0 +1,124 @@
+table yoy
+	isHidden
+	lineageTag: 6685de5d-a1c6-4844-b53b-99343c30a6c4
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: c3eb4375-e36f-4945-8c80-c9d6a0808f0c
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: 3381d9f5-362e-4ba3-a54e-45818c2edca5
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column scope12_mt
+		dataType: double
+		isHidden
+		lineageTag: 80861aed-5743-49df-bc9c-22730928d0c6
+		summarizeBy: sum
+		sourceColumn: scope12_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column prior_scope12_mt
+		dataType: double
+		isHidden
+		lineageTag: 3386957d-35e6-4904-a8a5-f2f983bc9123
+		summarizeBy: sum
+		sourceColumn: prior_scope12_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column scope12_change_pct
+		dataType: double
+		isHidden
+		lineageTag: 2dcbdf64-bc94-4491-99f3-d66d9d9cc14c
+		summarizeBy: none
+		sourceColumn: scope12_change_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column intensity_t_per_jpy_bn
+		dataType: double
+		isHidden
+		lineageTag: 320aede2-fc05-4b39-98a1-d3d5c2d3156e
+		summarizeBy: none
+		sourceColumn: intensity_t_per_jpy_bn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column prior_intensity_t_per_jpy_bn
+		dataType: double
+		isHidden
+		lineageTag: af168924-69f0-431b-9d76-3c9ae5974b97
+		summarizeBy: none
+		sourceColumn: prior_intensity_t_per_jpy_bn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column intensity_change_pct
+		dataType: double
+		isHidden
+		lineageTag: f3ecd0be-6080-4f53-9295-49d8ec668bb7
+		summarizeBy: none
+		sourceColumn: intensity_change_pct
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition yoy = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost", "ghg_emissions_benchmarking"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "v_yoy"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

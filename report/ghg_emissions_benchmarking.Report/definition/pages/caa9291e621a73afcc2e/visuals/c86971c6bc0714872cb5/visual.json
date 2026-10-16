@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "c86971c6bc0714872cb5",
+  "position": {
+    "x": 1.6323224429683449,
+    "y": 0,
+    "z": 3000,
+    "height": 85,
+    "width": 1770,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Value-chain Emissions: Scope 3 Breakdown",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "24pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Reported Scope 3 by category, one year at a time. Changes in calculation method mean year-over-year comparisons don’t hold.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Light",
+                      "fontStyle": "italic",
+                      "fontSize": "16pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Value Chain Emissions Title'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "fc27be96f9559b74efe0"
+}

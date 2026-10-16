@@ -1,0 +1,28 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["emissions","intensity","scope3","scope3_summary","yoy","fundamentals","_Measures","operations","disc_scope","disc_cat","disclosure"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table emissions
+ref table intensity
+ref table scope3
+ref table scope3_summary
+ref table yoy
+ref table fundamentals
+ref table fiscal_year
+ref table _Measures
+ref table operations
+ref table disclosure
+
+ref cultureInfo en-US
+

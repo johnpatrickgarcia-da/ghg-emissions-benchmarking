@@ -1,0 +1,183 @@
+table emissions
+	isHidden
+	lineageTag: 68475e5e-bc2f-4ad2-a214-ced9ac56294f
+
+	column company_id
+		dataType: string
+		isHidden
+		lineageTag: 4658e6ef-26e2-4968-89ad-a885b4c52f47
+		summarizeBy: none
+		sourceColumn: company_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fiscal_year_end
+		dataType: dateTime
+		isHidden
+		formatString: yyyy-mm-dd
+		lineageTag: 0e16540d-75af-4b96-8c52-26a282c6067b
+		summarizeBy: none
+		sourceColumn: fiscal_year_end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column scope
+		dataType: string
+		isHidden
+		lineageTag: 8078c204-148c-43b1-902b-3dcbcdeb9476
+		summarizeBy: none
+		sourceColumn: scope
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column disclosed
+		dataType: string
+		isHidden
+		lineageTag: ba0e7bd4-87fb-48e3-843b-d9e2511fc42b
+		summarizeBy: none
+		sourceColumn: disclosed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column value_reported
+		dataType: double
+		isHidden
+		lineageTag: e4d74155-1e78-4c3f-b9da-7cb43dbcb0c5
+		summarizeBy: none
+		sourceColumn: value_reported
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unit_reported
+		dataType: string
+		isHidden
+		lineageTag: f9c9014b-7b71-427e-b9e2-130f77313f96
+		summarizeBy: none
+		sourceColumn: unit_reported
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column value_mt
+		dataType: double
+		isHidden
+		lineageTag: 1b405d77-e971-4ebb-8f9b-32682c43aa10
+		summarizeBy: sum
+		sourceColumn: value_mt
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column gas_basis
+		dataType: string
+		isHidden
+		lineageTag: ad7b2c8f-8a91-47cc-8965-a3acfe730c2f
+		summarizeBy: none
+		sourceColumn: gas_basis
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column boundary_method
+		dataType: string
+		isHidden
+		lineageTag: 005908ae-c227-4b88-b874-100525756874
+		summarizeBy: none
+		sourceColumn: boundary_method
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assurance_status
+		dataType: string
+		isHidden
+		lineageTag: 1516aa14-ee3c-47a1-92e3-a2f84ce2359d
+		summarizeBy: none
+		sourceColumn: assurance_status
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_document
+		dataType: string
+		isHidden
+		lineageTag: 72c84dfd-b6dd-469b-976b-d372a2a5d810
+		summarizeBy: none
+		sourceColumn: source_document
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_page
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ffbc894a-dc75-49c0-9ddb-bc2c4cd8a692
+		summarizeBy: none
+		sourceColumn: source_page
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column methodology_notes
+		dataType: string
+		isHidden
+		lineageTag: 2d32cec6-f0d3-4680-928b-0d69a7592b87
+		summarizeBy: none
+		sourceColumn: methodology_notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assurance_notes
+		dataType: string
+		isHidden
+		lineageTag: 6d92f33e-cf10-43c8-8c7a-a4c9880ed02a
+		summarizeBy: none
+		sourceColumn: assurance_notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition emissions = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("localhost", "ghg_emissions_benchmarking"),
+				  #"Navigation 1" = Source{[Schema = "public", Item = "v_emissions"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
