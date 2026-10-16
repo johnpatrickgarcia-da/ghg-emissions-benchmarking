@@ -18,7 +18,7 @@ table operations
 		changedProperty = IsHidden
 
 	measure 'Units sold in millions (as reported)' = CALCULATE(SUM(operations[value_full]),operations[metric]="Units sold")/1e6
-		formatString: 0.0
+		formatString: 0.00
 		isHidden
 		lineageTag: 24665fdf-8a5a-4683-ae44-8f3fbb00bc27
 

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "b09e20d4be95dab9065e",
   "position": {
     "x": 0,
@@ -84,17 +84,20 @@
                     }
                   },
                   {
-                    "value": "Toyota FY2025, Scope 3 Cat 1, 10, 12:",
+                    "value": "Toyota, Scope 3 Cat 1, 10, 12:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "14pt"
                     }
                   },
                   {
-                    "value": " Recalculated under revised JAMA guidelines.",
+                    "value": " ",
                     "textStyle": {
                       "fontSize": "14pt"
                     }
+                  },
+                  {
+                    "value": "Calculation conditions changed under JAMA guidelines; FY2023–FY2024 restated on the same basis."
                   }
                 ]
               },

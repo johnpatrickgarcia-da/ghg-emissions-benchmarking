@@ -1,3 +1,13 @@
+-- =============================================================================
+-- 05_scope3_checks.sql
+-- GHG Emissions Benchmarking - Scope 3 reconciliation and category counts.
+--
+-- Creates v_scope3_summary: sum of categories vs. reported Scope 3 total, categories
+-- reported (including a reported 0) and Category 11 share of the reported total.
+-- completeness_pct (count / 15) is an intermediate check, hidden in the model.
+-- Input: v_scope3, v_emissions from 02_standardize.sql. Run after 02.
+-- =============================================================================
+
 SET client_encoding = 'UTF8';
 
 CREATE OR REPLACE VIEW v_scope3_summary AS

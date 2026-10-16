@@ -1,3 +1,12 @@
+-- =============================================================================
+-- 03_intensity_ranking.sql
+-- GHG Emissions Benchmarking - Scope 1+2 intensity and ranking.
+--
+-- Creates v_intensity: Scope 1 + Scope 2 (market-based) per JPY  billion revenue and per
+-- employee, RANK() of the four companies per year (1 = lowest) and the peer average.
+-- Input: v_emissions, v_operations from 02_standardize.sql. Run after 02.
+-- =============================================================================
+
 SET client_encoding = 'UTF8';
 
 CREATE OR REPLACE VIEW v_intensity AS

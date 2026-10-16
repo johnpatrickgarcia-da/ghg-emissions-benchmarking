@@ -1,3 +1,11 @@
+-- =============================================================================
+-- 04_yoy_change.sql
+-- GHG Emissions Benchmarking - year-over-year change.
+--
+-- Creates v_yoy: % change in absolute Scope 1+2 and in intensity vs. the prior year (LAG()).
+-- Input: v_intensity from 03_intensity_ranking.sql. Run after 03.
+-- =============================================================================
+
 SET client_encoding = 'UTF8';
 
 CREATE OR REPLACE VIEW v_yoy AS

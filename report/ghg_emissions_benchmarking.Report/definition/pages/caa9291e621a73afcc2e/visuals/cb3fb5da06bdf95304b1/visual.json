@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "cb3fb5da06bdf95304b1",
   "position": {
     "x": 75,
@@ -25,7 +25,7 @@
                     }
                   },
                   {
-                    "value": ": Company sustainability reports, data books, websites and integrated reports (full list in README). All figures as reported; market-based Scope 2."
+                    "value": ": Company sustainability reports, data books, websites and integrated reports (full list in README). All figures as reported; Scope 2 as reported by each company (basis notes in README)."
                   }
                 ]
               }

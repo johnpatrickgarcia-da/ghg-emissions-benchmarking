@@ -1,3 +1,12 @@
+-- =============================================================================
+-- 02_standardize.sql
+-- GHG Emissions Benchmarking - standardize units and gas basis.
+--
+-- Creates v_emissions and v_scope3 (value_mt in million tonnes, gas_basis CO2/CO2e
+-- read from the published unit) and v_operations (value_full = value_reported * unit_scale).
+-- Input: tables from 01_create_tables.sql. Run after 01.
+-- =============================================================================
+
 SET client_encoding = 'UTF8';
 
 CREATE OR REPLACE VIEW v_emissions AS
