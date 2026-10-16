@@ -1,5 +1,6 @@
 # GHG Emissions Benchmarking Dashboard – Japanese Automakers 日本の自動車メーカー
 An Excel → PostgreSQL → Power BI pipeline that benchmarks the reported emissions of Toyota, Honda, Nissan and Subaru, and shows where their disclosures can and can't be compared.
+
 **Version 1.0 · October 2026** · Data: FY2023–FY2025, as published in each company's 2025 reports.
 
 ---
