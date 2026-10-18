@@ -59,6 +59,7 @@ An Excel → PostgreSQL → Power BI pipeline that benchmarks the reported emiss
  - **CO₂ vs CO₂e:** carbon dioxide only, versus all greenhouse gases converted to their CO₂ equivalent.
  - **Assurance:** an independent check of reported figures; "limited" is a lighter review than "reasonable".
  - **Restatement:** a company revising a figure it published in an earlier year.
+ - **Organizational boundary approach:** how a company decides which operations count as its own when reporting emissions: those it controls operationally, those it controls financially, or a share matching its ownership (equity share).
 
 ---
 
